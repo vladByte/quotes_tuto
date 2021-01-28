@@ -1,8 +1,9 @@
 const path = require("path");
 
+// Funcion que renderiza la vista recibida.
 function render(file, res) {
   return res.sendFile(path.join(__dirname + `/../views/${file}.html`));
-}
+} 
 
 class HomeController {
   async index(req, res) {
